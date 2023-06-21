@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300&family=Roboto+Condensed:wght@300&display=swap');
+body{
+    background-image: url(../img/fundo.jpg);
+}
+.container{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px;
+    border-color: aliceblue;
+}
+
+.espaco{
+    padding: 6.4%;
+}
+.paginajogo{
+    color: rgb(255, 255, 255);
+    width: 80%;
+    height: 50%;
+    text-align: center;
+}
+
+.textojogo{
+    text-align: center;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px; 
+    margin-top: 2%; 
+}
+.desafio{
+    background: radial-gradient(circle, rgba(53,133,230,1) 0%, rgba(0,0,0,1) 83%);
+}
+.jogo{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tentativa{
+    text-align: center;
+}
+.d-grid{
+    margin-top: 5%;
+}
+#btn{
+    margin-top: 2%;
+}
+#misterio{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(56, 88, 234);
+    color: white !important;
+    
+}
+
+ #jogo{
+    display: none;
+
+ }
+#fim{
+    display: none;
+}
