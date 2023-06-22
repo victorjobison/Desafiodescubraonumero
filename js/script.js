@@ -13,23 +13,30 @@ function iniciarjogo() {
     var diferenca = maximo - minimo;
     var aleatorio = Math.random();
     resposta = minimo + Math.trunc(diferenca * aleatorio);
-    console.log(resposta)
+    
 }
 function enviarresposta() {
     var tentativa = document.getElementById("tentativa").value;
+    
     if (tentativa == resposta) {
         document.getElementById("palpite").innerText = "Parabéns Você Acertou!";
         document.getElementById("palpite").style.backgroundColor = "green";
         document.getElementById("misterio").value = resposta;
+        var desabilitarinput = document.getElementById('tentativa');
+        desabilitarinput.disabled = true;
+        document.getElementById('tentativa').style.color = "green"
+        document.getElementById('btn').style.display = "none"
+        document.getElementById('novamente').innerText = "Jogar Novamente"
 
+        
     }
     if (tentativa > resposta) {
-        document.getElementById("palpite").innerText = "O número sorteado é menor!";
+        document.getElementById("palpite").innerText = "O número sorteado é menor que "+tentativa+"!";
         document.getElementById("palpite").style.backgroundColor = "yellow";
 
     }
     if (tentativa < resposta) {
-        document.getElementById("palpite").innerText = "O número sorteado é maior!";
+        document.getElementById("palpite").innerText = "O número sorteado é maior que "+tentativa+"!";
         document.getElementById("palpite").style.backgroundColor = "yellow";
 
     }

@@ -14,7 +14,7 @@ body{
 }
 
 .espaco{
-    padding: 6.4%;
+    padding: 8.8%;
 }
 .paginajogo{
     color: rgb(255, 255, 255);
@@ -41,6 +41,8 @@ body{
 }
 #tentativa{
     text-align: center;
+    background-color: white !important;
+    color: black;
 }
 .d-grid{
     margin-top: 5%;
